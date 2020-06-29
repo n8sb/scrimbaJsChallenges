@@ -50,3 +50,9 @@ function alternatingSums(array) {
     arr.push(oddSum);
     return arr;
 }
+
+//Array replace
+function arrayReplace(array, elemToReplace, substitutionElem) {
+  var arr = array.map(x => x === elemToReplace ? array[array[x]] = substitutionElem : x);
+  return arr 
+}
