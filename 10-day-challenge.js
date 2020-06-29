@@ -53,6 +53,6 @@ function alternatingSums(array) {
 
 //Array replace
 function arrayReplace(array, elemToReplace, substitutionElem) {
-  var arr = array.map(x => x === elemToReplace ? array[array[x]] = substitutionElem : x);
+  var arr = array.map(x => (x === elemToReplace) ? substitutionElem : x);
   return arr 
 }
