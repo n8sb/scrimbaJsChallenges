@@ -1,16 +1,15 @@
 //Add border
 function addBorder(array) {
     //  write code here.
-    var topWall = '*****';
-    var bottomWall = '*****';
+    var wall = '*'.repeat(array[0].length + 2);
     var newArray = [];
     array.forEach(
         function(element){
             newArray.push('*' + element + '*')
         }
     )
-    newArray.unshift(topWall);
-    newArray.push(bottomWall);
+    newArray.unshift(wall);
+    newArray.push(wall);
     return newArray;
 }
 
