@@ -59,7 +59,13 @@ function arrayReplace(array, elemToReplace, substitutionElem) {
 
 //Case Insensitive Palindrome
 function caseInsensitivePalindrome(str) {
-    //  write code here.
      var revArr = Array.from(str).reverse().join('').toLowerCase();
      return revArr === str.toLowerCase();
+}
+
+//Enclose in brackets
+function encloseInBrackets(str) {
+    var brackets = ['(',')'] ;
+    brackets.splice( 1, 0, str);
+    return brackets.join('');
 }
