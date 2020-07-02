@@ -56,3 +56,10 @@ function arrayReplace(array, elemToReplace, substitutionElem) {
   var arr = array.map(x => (x === elemToReplace) ? substitutionElem : x);
   return arr 
 }
+
+//Case Insensitive Palindrome
+function caseInsensitivePalindrome(str) {
+    //  write code here.
+     var revArr = Array.from(str).reverse().join('').toLowerCase();
+     return revArr === str.toLowerCase();
+}
