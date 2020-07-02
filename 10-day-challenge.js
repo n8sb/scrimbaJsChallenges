@@ -69,3 +69,11 @@ function encloseInBrackets(str) {
     brackets.splice( 1, 0, str);
     return brackets.join('');
 }
+
+//Factorial number
+function factorialNumber(num) {
+    // write code here
+    var arr = [...Array(num).keys()].map(x => x+1);
+    var factorial = arr.reduce((x,y) => x*y);
+    return factorial; 
+}
