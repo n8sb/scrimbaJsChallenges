@@ -77,3 +77,17 @@ function factorialNumber(num) {
     var factorial = arr.reduce((x,y) => x*y);
     return factorial; 
 }
+
+//First digit
+function firstDigit(str) {
+    //  write code here.
+    var arr = Array.from(str);
+    var first;
+    for(let i = 0; i < arr.length; i++){
+      if(!isNaN(Number(arr[i]))){
+        first = arr[i];
+        break
+      }
+    }
+    return first;
+}
